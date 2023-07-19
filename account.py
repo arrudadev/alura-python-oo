@@ -4,3 +4,12 @@ class Account:
     self.owner = owner
     self.balance = balance
     self.limit = limit
+
+  def statement(self):
+    print(f'Saldo de {self.balance} do titular {self.owner}')
+
+  def deposit(self, value):
+    self.balance += value
+
+  def withdraw(self, value):
+    self.balance -= value
