@@ -11,8 +11,16 @@ class Account:
   def deposit(self, value):
     self.__balance += value
 
+  def __can_withdraw(self, value):
+    available_value = self.__balance + self.__limit
+
+    return value <= available_value
+
   def withdraw(self, value):
-    self.__balance -= value
+    if (self.__can_withdraw(value)):
+      self.__balance -= value
+    else:
+      print(f'O valor {value} passou do limite {self.__limit}')
 
   @property
   def number(self):

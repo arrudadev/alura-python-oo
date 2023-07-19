@@ -2,17 +2,14 @@ from account import Account
 
 first_account = Account(123, 'Alexandre', 500, 1000)
 
-first_account.deposit(100)
-first_account.deposit(100)
-first_account.withdraw(150)
-first_account.limit = 2000
-
 print('First account:\n')
 
 print('Number:', first_account.number)
 print('Balance:', first_account.balance)
 print('Limit:', first_account.limit)
 first_account.statement()
+
+first_account.withdraw(3000)
 
 print('\n==============================\n')
 
