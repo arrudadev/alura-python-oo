@@ -1,6 +1,7 @@
 from account import Account
 from film import Film
 from serie import Serie
+from playlist import Playlist
 
 print('\n==============================\n')
 
@@ -53,5 +54,18 @@ print('Series:\n')
 big_bang_theory = Serie('Big Bang Theory', 2010, 10)
 
 print(big_bang_theory)
+
+print('\n==============================\n')
+
+print('Playlist:\n')
+
+films_series_playlist = Playlist(
+    'Filmes e Series', [avengers, big_bang_theory]
+)
+
+print(f'Tamanho da playlist: {len(films_series_playlist)}')
+
+for program in films_series_playlist:
+  print(program)
 
 print('\n==============================\n')
