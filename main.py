@@ -1,5 +1,8 @@
 from account import Account
 from film import Film
+from serie import Serie
+
+print('\n==============================\n')
 
 first_account = Account(123, 'Alexandre', 500, 1000)
 
@@ -42,3 +45,13 @@ print('Filmes:\n')
 avengers = Film('Vingadores', 2018, 160)
 
 print(avengers.name)
+
+print('\n==============================\n')
+
+print('Series:\n')
+
+big_bang_theory = Serie('Big Bang Theory', 2010, 10)
+
+print(big_bang_theory.name)
+
+print('\n==============================\n')
