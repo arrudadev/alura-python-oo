@@ -1,15 +1,15 @@
 class Account:
   def __init__(self, number, owner, balance, limit):
-    self.number = number
-    self.owner = owner
-    self.balance = balance
-    self.limit = limit
+    self.__number = number
+    self.__owner = owner
+    self.__balance = balance
+    self.__limit = limit
 
   def statement(self):
-    print(f'Saldo de {self.balance} do titular {self.owner}')
+    print(f'Saldo de {self.__balance} do titular {self.__owner}')
 
   def deposit(self, value):
-    self.balance += value
+    self.__balance += value
 
   def withdraw(self, value):
-    self.balance -= value
+    self.__balance -= value
