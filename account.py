@@ -14,11 +14,18 @@ class Account:
   def withdraw(self, value):
     self.__balance -= value
 
-  def get_number(self):
+  @property
+  def number(self):
     return self.__number
 
-  def get_limit(self):
+  @property
+  def balance(self):
+    return self.__balance
+
+  @property
+  def limit(self):
     return self.__limit
 
-  def set_limit(self, limit):
+  @limit.setter
+  def limit(self, limit):
     self.__limit = limit

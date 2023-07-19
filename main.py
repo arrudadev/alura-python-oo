@@ -16,12 +16,14 @@ first_account.withdraw(150)
 
 second_account.statement()
 
-first_account.set_limit(2000)
+first_account.limit = 2000
 
-print(first_account.get_number())
-print(first_account.get_limit())
+print(first_account.number)
+print(first_account.balance)
+print(first_account.limit)
 
-second_account.set_limit(3000)
+second_account.limit = 3000
 
-print(second_account.get_number())
-print(second_account.get_limit())
+print(second_account.number)
+print(second_account.balance)
+print(second_account.limit)
