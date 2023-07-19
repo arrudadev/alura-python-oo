@@ -44,9 +44,7 @@ print('Filmes:\n')
 
 avengers = Film('Vingadores', 2018, 160)
 
-print(
-    f'Nome: {avengers.name}, Ano: {avengers.year}, Duração: {avengers.duration}'
-)
+print(avengers)
 
 print('\n==============================\n')
 
@@ -54,8 +52,6 @@ print('Series:\n')
 
 big_bang_theory = Serie('Big Bang Theory', 2010, 10)
 
-print(
-    f'Nome: {big_bang_theory.name}, Ano: {big_bang_theory.year}, Temporadas: {big_bang_theory.seasons}'
-)
+print(big_bang_theory)
 
 print('\n==============================\n')

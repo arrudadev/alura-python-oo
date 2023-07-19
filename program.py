@@ -18,3 +18,6 @@ class Program:
   @name.setter
   def name(self, name: str) -> None:
     self._name = name.title()
+
+  def __str__(self) -> str:
+    return f'Nome: {self._name}, Likes: {self._likes}'
