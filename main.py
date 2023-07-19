@@ -1,4 +1,5 @@
 from account import Account
+from film import Film
 
 first_account = Account(123, 'Alexandre', 500, 1000)
 
@@ -33,3 +34,11 @@ print('Static methods:\n')
 
 print('Bank codes:', Account.bank_codes())
 print('Bank code:', Account.bank_code())
+
+print('\n==============================\n')
+
+print('Filmes:\n')
+
+avengers = Film('Vingadores', 2018, 160)
+
+print(avengers.name)
